@@ -21,6 +21,10 @@
   .preview-row > div:not(:last-child) {
     margin-bottom: 2rem;
   }
+  .blog .topic {
+    width: 7%;
+    margin-right: .5rem;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -48,6 +52,16 @@
   }
   header .intro {
     margin-bottom: 50px;
+    p,
+    span.name {
+      font-size: 20px;
+    }
+    b {
+      font-size: 25px;
+    }
+    span.profession {
+      font-size: 18px;
+    }
   }
   header .my-info {
     text-align: center;

@@ -1116,17 +1116,18 @@ header .my-info span {
 /* line 76, ../sass/_portfolio.scss */
 .portfolio .portfolio-nav ul {
   margin: 0 auto;
+  display: table;
 }
-/* line 79, ../sass/_portfolio.scss */
+/* line 80, ../sass/_portfolio.scss */
 .portfolio .portfolio-nav li {
-  display: inline-block;
-  margin-right: 2.5rem;
+  display: table-cell;
+  padding: 0 15px 0 0;
 }
-/* line 83, ../sass/_portfolio.scss */
+/* line 84, ../sass/_portfolio.scss */
 .portfolio .portfolio-nav li:last-child {
-  margin-right: 0;
+  padding-right: 0;
 }
-/* line 86, ../sass/_portfolio.scss */
+/* line 87, ../sass/_portfolio.scss */
 .portfolio .portfolio-nav button {
   background: transparent;
   border: none;
@@ -1134,7 +1135,7 @@ header .my-info span {
   line-height: 40px;
   padding: 0 16px;
 }
-/* line 92, ../sass/_portfolio.scss */
+/* line 93, ../sass/_portfolio.scss */
 .portfolio .portfolio-nav button:hover, .portfolio .portfolio-nav button:focus, .portfolio .portfolio-nav button.active-button {
   text-decoration: none;
   border: 1px solid #fff;
@@ -1143,17 +1144,17 @@ header .my-info span {
   line-height: 38px;
   outline: none;
 }
-/* line 106, ../sass/_portfolio.scss */
+/* line 107, ../sass/_portfolio.scss */
 .portfolio .preview-row {
   font-size: 0;
   margin-bottom: 1rem;
 }
-/* line 109, ../sass/_portfolio.scss */
+/* line 110, ../sass/_portfolio.scss */
 .portfolio .preview-row:last-child {
   text-align: center;
   margin-bottom: 0;
 }
-/* line 113, ../sass/_portfolio.scss */
+/* line 114, ../sass/_portfolio.scss */
 .portfolio .preview-row .preview-block {
   display: inline-block;
   height: 13rem;
@@ -1161,38 +1162,38 @@ header .my-info span {
   cursor: pointer;
   background: #f8e798;
 }
-/* line 114, ../sass/_portfolio.scss */
+/* line 115, ../sass/_portfolio.scss */
 .portfolio .preview-row .preview-block .project-preview {
   opacity: 0;
 }
-/* line 122, ../sass/_portfolio.scss */
+/* line 123, ../sass/_portfolio.scss */
 .portfolio .preview-row .preview-block:last-child {
   margin-right: 0;
 }
-/* line 125, ../sass/_portfolio.scss */
+/* line 126, ../sass/_portfolio.scss */
 .portfolio .preview-row .preview-block:hover {
   background: #5c5766;
 }
-/* line 127, ../sass/_portfolio.scss */
+/* line 128, ../sass/_portfolio.scss */
 .portfolio .preview-row .preview-block:hover .project-preview {
   opacity: 1;
   transition: opacity, .3s;
 }
-/* line 133, ../sass/_portfolio.scss */
+/* line 134, ../sass/_portfolio.scss */
 .portfolio .preview-row .preview-hidden {
   opacity: .4;
   transition: opacity, .7s;
   cursor: default;
 }
-/* line 137, ../sass/_portfolio.scss */
+/* line 138, ../sass/_portfolio.scss */
 .portfolio .preview-row .preview-hidden:hover {
   background: #f8e798;
 }
-/* line 139, ../sass/_portfolio.scss */
+/* line 140, ../sass/_portfolio.scss */
 .portfolio .preview-row .preview-hidden:hover .project-preview {
   opacity: 0;
 }
-/* line 144, ../sass/_portfolio.scss */
+/* line 145, ../sass/_portfolio.scss */
 .portfolio .preview-row .project-preview {
   position: relative;
   text-align: center;
@@ -1201,25 +1202,25 @@ header .my-info span {
   top: 10%;
   width: 100%;
 }
-/* line 151, ../sass/_portfolio.scss */
+/* line 152, ../sass/_portfolio.scss */
 .portfolio .preview-row .project-preview .preview-name {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* line 156, ../sass/_portfolio.scss */
+/* line 157, ../sass/_portfolio.scss */
 .portfolio .preview-row .project-preview .preview-description {
   max-width: 80%;
   margin: 0 auto 15px;
 }
-/* line 160, ../sass/_portfolio.scss */
+/* line 161, ../sass/_portfolio.scss */
 .portfolio .preview-row .project-preview .preview-btn {
   border-radius: 50%;
   height: 65px;
   width: 65px;
   background: #bc492b;
 }
-/* line 165, ../sass/_portfolio.scss */
+/* line 166, ../sass/_portfolio.scss */
 .portfolio .preview-row .project-preview .preview-btn:hover, .portfolio .preview-row .project-preview .preview-btn:focus {
   color: #fff;
 }
@@ -1460,8 +1461,9 @@ header .my-info span {
 .blog .blog-carousel-inner {
   height: 500px;
   width: 3000px;
+  overflow: hidden;
 }
-/* line 203, ../sass/_blog.scss */
+/* line 204, ../sass/_blog.scss */
 .blog .topic {
   width: 9.35%;
   margin-right: 1vw;
@@ -1470,13 +1472,13 @@ header .my-info span {
   border-radius: 4px;
   background: #f4f4f4;
 }
-/* line 210, ../sass/_blog.scss */
+/* line 211, ../sass/_blog.scss */
 .blog .topic_img {
   width: 100%;
   margin-bottom: 30px;
   border-radius: 4px 4px 0 0;
 }
-/* line 215, ../sass/_blog.scss */
+/* line 216, ../sass/_blog.scss */
 .blog .topic_heading {
   font-weight: bold;
   margin-bottom: 20px;
@@ -1484,7 +1486,7 @@ header .my-info span {
   font-size: 14px;
   text-transform: uppercase;
 }
-/* line 222, ../sass/_blog.scss */
+/* line 223, ../sass/_blog.scss */
 .blog .topic_description {
   margin-bottom: 25px;
   color: #222;
@@ -1492,33 +1494,33 @@ header .my-info span {
   font-size: 13px;
   font-style: italic;
 }
-/* line 229, ../sass/_blog.scss */
+/* line 230, ../sass/_blog.scss */
 .blog .topic_read-more {
   color: #ec8a3e;
   font-size: 13px;
 }
-/* line 233, ../sass/_blog.scss */
+/* line 234, ../sass/_blog.scss */
 .blog .topic figcaption {
   padding: 0 25px 30px;
 }
-/* line 237, ../sass/_blog.scss */
+/* line 238, ../sass/_blog.scss */
 .blog .ps-container > .ps-scrollbar-x-rail {
   height: 19px;
   opacity: 1;
   border-radius: 10px;
   background-color: #f4f4f4;
 }
-/* line 242, ../sass/_blog.scss */
+/* line 243, ../sass/_blog.scss */
 .blog .ps-container > .ps-scrollbar-x-rail .ps-scrollbar-x {
   height: 19px;
   border-radius: 10px;
 }
-/* line 246, ../sass/_blog.scss */
+/* line 247, ../sass/_blog.scss */
 .blog .ps-container > .ps-scrollbar-x-rail .ps-scrollbar-x,
 .blog .ps-container > .ps-scrollbar-x-rail .ps-scrollbar-x:hover {
   background-color: #ec8a3e;
 }
-/* line 251, ../sass/_blog.scss */
+/* line 252, ../sass/_blog.scss */
 .blog .ps-container.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail > .ps-scrollbar-x {
   background-color: #ec8a3e;
 }
@@ -1718,47 +1720,66 @@ footer a:focus {
   .preview-row > div:not(:last-child) {
     margin-bottom: 2rem;
   }
+
+  /* line 24, ../sass/_media.scss */
+  .blog .topic {
+    width: 7%;
+    margin-right: .5rem;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
-  /* line 28, ../sass/_media.scss */
+  /* line 32, ../sass/_media.scss */
   .my-info,
   .avatar {
     margin-bottom: 2rem;
   }
 
-  /* line 32, ../sass/_media.scss */
+  /* line 36, ../sass/_media.scss */
   .my-contacts {
     margin: 0 0 60px 20%;
   }
 
-  /* line 35, ../sass/_media.scss */
+  /* line 39, ../sass/_media.scss */
   .my-contacts li {
     width: 100%;
     margin: 0 0 45px;
   }
-  /* line 38, ../sass/_media.scss */
+  /* line 42, ../sass/_media.scss */
   .my-contacts li:last-child {
     margin: 0;
   }
 }
 /* Special */
 @media only screen and (max-width: 545px) {
-  /* line 46, ../sass/_media.scss */
+  /* line 50, ../sass/_media.scss */
   header .main-menu {
     margin-bottom: 90px;
   }
 
-  /* line 49, ../sass/_media.scss */
+  /* line 53, ../sass/_media.scss */
   header .intro {
     margin-bottom: 50px;
   }
+  /* line 55, ../sass/_media.scss */
+  header .intro p,
+  header .intro span.name {
+    font-size: 20px;
+  }
+  /* line 59, ../sass/_media.scss */
+  header .intro b {
+    font-size: 25px;
+  }
+  /* line 62, ../sass/_media.scss */
+  header .intro span.profession {
+    font-size: 18px;
+  }
 
-  /* line 52, ../sass/_media.scss */
+  /* line 66, ../sass/_media.scss */
   header .my-info {
     text-align: center;
   }
-  /* line 54, ../sass/_media.scss */
+  /* line 68, ../sass/_media.scss */
   header .my-info li {
     margin: 0 0 20px;
     width: 100%;
@@ -1766,17 +1787,17 @@ footer a:focus {
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /* line 63, ../sass/_media.scss */
+  /* line 77, ../sass/_media.scss */
   .my-twits .twits-slider .twits-slider-control {
     top: 110%;
   }
 
-  /* line 66, ../sass/_media.scss */
+  /* line 80, ../sass/_media.scss */
   .my-twits .twits-slider .twits-slider-control.left {
     left: 35%;
   }
 
-  /* line 69, ../sass/_media.scss */
+  /* line 83, ../sass/_media.scss */
   .my-twits .twits-slider .twits-slider-control.right {
     right: 35%;
   }
