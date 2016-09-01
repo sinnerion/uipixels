@@ -9,6 +9,12 @@
   .slider {
     margin-bottom: 30px;
   }
+  .my-twits .twits-slider .twits-slider-control.left {
+    left: 40%
+  }
+  .my-twits .twits-slider .twits-slider-control.right {
+    right: 40%
+  }
   .portfolio .preview-row {
     margin-bottom: 0;
   }
@@ -18,7 +24,11 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
+  .my-info,
+  .avatar {
+    margin-bottom: 2rem;
+  }
   .my-contacts {
     margin: 0 0 60px 20%;
   }
@@ -50,7 +60,15 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+  .my-twits .twits-slider .twits-slider-control {
+    top: 110%;
+  }
+  .my-twits .twits-slider .twits-slider-control.left {
+    left: 35%
+  }
+  .my-twits .twits-slider .twits-slider-control.right {
+    right: 35%
+  }
 }
 
 /* Custom, iPhone Retina */

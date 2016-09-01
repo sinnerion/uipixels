@@ -10,18 +10,8 @@
   .heading {
     color: $blog-heading;
   }
-  .sub-heading {
-    color: $gray-text-2;
-  }
   h2:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 88px;
-    height: 3px;
-    left: 51px;
-    bottom: 0;
-    background: url("../img/blog-heading-shape.png") no-repeat;
+    background: url("../img/blog-heading-shape.png") center no-repeat;
   }
 
   //article

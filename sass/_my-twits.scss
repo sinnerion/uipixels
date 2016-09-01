@@ -8,10 +8,6 @@
   }
   // my-twits-slider
   .twits-slider {
-    min-height: 40vh;
-    .item {
-      height: 40vh;
-    }
     .twits-slider-caption {
       position: static;
       width: 100%;
@@ -32,7 +28,7 @@
       width: 38px;
       border: 1px solid $main-text;
       border-radius: 50%;
-      top: 70%;
+      top: 100%;
       background: transparent;
     }
     .twits-slider-control.left {

@@ -6,6 +6,7 @@
   .small-photo {
     font-size: 0;
     margin-bottom: 16px;
+    text-align: center;
   }
   .sub-heading {
     color: $about-sub-heading;
@@ -13,26 +14,22 @@
   h2 {
     color: $main-text;
     &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 93px;
-      height: 3px;
-      left: 66px;
-      bottom: 0;
-      background: url("../img/about-heading-shape.png") no-repeat;
+      background: url("../img/about-heading-shape.png") center no-repeat;
     }
   }
   h3 {
     color: $main-text;
   }
   .my-info {
-    color: $gray-text;
+    color: $main-text;
     font-size: 15px;
     font-weight: 100;
     p {
       margin: 0 0 25px;
     }
+  }
+  .avatar img {
+    max-width: 100%;
   }
   .about-social {
     display: table;

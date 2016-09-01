@@ -8,14 +8,7 @@
   h2 {
     color: $main-text;
     &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 88px;
-      height: 3px;
-      left: 66px;
-      bottom: 0;
-      background: url("../img/portfolio-heading-shape.png") no-repeat;
+      background: url("../img/portfolio-heading-shape.png") center no-repeat;
     }
   }
   //slider
