@@ -1,0 +1,23 @@
+@import "variables";
+
+footer {
+  line-height: 90px;
+  border-top: 1px solid $blog-shape;
+  .copyright {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    color: $blog-form;
+  }
+  a {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $blog-form;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    color: darken($blog-form, 20%);
+    text-decoration: none;
+  }
+}

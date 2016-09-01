@@ -1,0 +1,59 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+  //portfolio-slider
+  .slider {
+    margin-bottom: 30px;
+  }
+  .portfolio .preview-row {
+    margin-bottom: 0;
+  }
+  .preview-row > div:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .my-contacts {
+    margin: 0 0 60px 20%;
+  }
+  .my-contacts li {
+    width: 100%;
+    margin: 0 0 45px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+/* Special */
+@media only screen and (max-width : 545px) {
+  header .main-menu {
+    margin-bottom: 90px;
+  }
+  header .intro {
+    margin-bottom: 50px;
+  }
+  header .my-info {
+    text-align: center;
+    li {
+      margin: 0 0 20px;
+      width: 100%;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

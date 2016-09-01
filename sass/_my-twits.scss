@@ -1,0 +1,56 @@
+@import "variables";
+
+.my-twits {
+  background-color: $header-bg;
+  text-align: center;
+  .twits-icon {
+    margin-bottom: 50px;
+  }
+  // my-twits-slider
+  .twits-slider {
+    min-height: 40vh;
+    .item {
+      height: 40vh;
+    }
+    .twits-slider-caption {
+      position: static;
+      width: 100%;
+      font-size: 19px;
+      font-weight: 300;
+      p {
+        margin: 0 0 25px;
+      }
+      span {
+        text-transform: uppercase;
+      }
+    }
+    .twits-nick {
+      font-weight: bold;
+    }
+    .twits-slider-control {
+      height: 38px;
+      width: 38px;
+      border: 1px solid $main-text;
+      border-radius: 50%;
+      top: 70%;
+      background: transparent;
+    }
+    .twits-slider-control.left {
+      left: 45%;
+    }
+    .twits-slider-control.right {
+      right: 45%;
+    }
+    .twits-slider-control span.glyphicon {
+      position: relative;
+      font-size: 20px;
+      top: 6px;
+    }
+    .twits-slider-control.left span.glyphicon {
+      left: 5px;
+    }
+    .twits-slider-control.right span.glyphicon {
+      left: -4px;
+    }
+  }
+}

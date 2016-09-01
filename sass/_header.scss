@@ -1,0 +1,116 @@
+@import "variables";
+
+header {
+  padding-top: 60px;
+  min-height: 950px;
+  background-color: $header-bg;
+  .main-menu {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 140px;
+    ul {
+      display: table;
+      width: 100%;
+    }
+    li {
+      display: table-cell;
+      font-size: 15px;
+    }
+  }
+  .intro {
+    margin-bottom: 165px;
+    text-align: center;
+    color: $main-text;
+    .logo {
+      margin-bottom: 50px;
+      font-size: 0;
+    }
+    p {
+      margin: 0 0 30px;
+      font-size: 35px;
+      text-transform: uppercase;
+    }
+    span.name {
+      display: block;
+      font-weight: 100;
+      font-size: 66px;
+      margin-bottom: 30px;
+    }
+    span.profession {
+      display: block;
+      font-weight: 300;
+      font-size: 22px;
+      margin-bottom: 40px;
+    }
+  }
+  .my-social,
+  .my-info {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: table;
+  }
+  .my-social {
+    position: relative;
+    text-align: center;
+    font-size: 0;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 87px;
+      height: 2px;
+      background: url("../img/icons/header-sprite-line.png");
+      right: -87px;
+      bottom: 22px;
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 87px;
+      height: 2px;
+      background: url("../img/icons/header-sprite-line.png");
+      left: -87px;
+      top: 22px;
+    }
+    li {
+      display: inline-block;
+      margin-right: 26px;
+    }
+    li:last-child {
+      margin: 0;
+    }
+    a {
+      display: block;
+      width: 48px;
+      height: 48px;
+      background: url("../img/icons/header-sprite.png") no-repeat;
+    }
+    a.tw {
+      background-position: 0px 0px;
+    }
+    a.db {
+      background-position: -74px 0px;
+    }
+    a.be {
+      background-position: -148px 0px;
+    }
+  }
+  .my-info  {
+    font-weight: bold;
+    color: $main-text;
+    li {
+      display: inline-block;
+      margin-right: 80px;
+    }
+    li:last-child {
+      margin: 0;
+    }
+    span {
+      color: $portfolio;
+      text-transform: uppercase;
+    }
+  }
+}
